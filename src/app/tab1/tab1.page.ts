@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, NavigationExtras } from "@angular/router";
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,22 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor( private router: Router) {}
+
+   videopage() {
+    this.router.navigate(["video"]);
+  }   
+
+  audio() {
+    this.router.navigate(["audio"]);
+  }   
+
+  gallery() {
+    this.router.navigate(["gallery"]);
+  }   
+
+  content() {
+    this.router.navigate(["content"]);
+  }
 
 }
