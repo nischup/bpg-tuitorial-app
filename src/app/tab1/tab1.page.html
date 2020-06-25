@@ -8,48 +8,176 @@
 
 <ion-content [fullscreen]="true" color="success">
 
-<!--   <ion-row>
+  <ion-row>
 
     <ion-col size="6">
       <ion-card  (click)="videopage()">
-        <ion-card-header>
-          <img width="350" height="100" src="assets/icon/video.jpg">
+        <ion-card-header class="ioncard">
+          <h1> Video  <ion-icon name="videocam"></ion-icon> </h1>
         </ion-card-header>
       </ion-card>
     </ion-col>    
 
     <ion-col size="6">
       <ion-card (click)="audio()">
-          <ion-card-header>
-            <img width="350" height="100" src="assets/icon/audionew.jpg">
+          <ion-card-header class="ioncard">
+             <h1> Audio  <ion-icon name="musical-notes"></ion-icon> </h1>
           </ion-card-header>
         </ion-card>
     </ion-col>
 
-  </ion-row>   -->
+  </ion-row>  
 
-<!--   <ion-row>
+  <ion-row>
 
     <ion-col size="6">
       <ion-card (click)="gallery()">
-        <ion-card-header>
-           <img width="350" height="100" src="assets/icon/gallery.png"> -->
-          <!-- <ion-card-title> Gallery </ion-card-title> -->
-<!--         </ion-card-header>
+          <ion-card-header class="ioncard">
+             <h1> Gallery <ion-icon name="images"></ion-icon> </h1>
+          </ion-card-header>
       </ion-card>
-    </ion-col>     -->
-<!-- 
+    </ion-col>    
+
     <ion-col size="6">
       <ion-card (click)="content()">
-          <ion-card-header>
-              <img width="350" height="100" src="assets/icon/content.png"> -->
-            <!-- <ion-card-title> Content </ion-card-title> -->
-<!--           </ion-card-header>
+<!--           <ion-card-header>
+              <img width="350" height="40" src="assets/icon/content.png">
+            <ion-card-title> Content </ion-card-title>
+          </ion-card-header> -->
+          <ion-card-header class="ioncard">
+             <h1> Content   <ion-icon name="document"></ion-icon> </h1>
+          </ion-card-header>
         </ion-card>
     </ion-col>
 
-  </ion-row> -->
+  </ion-row>
 
-      <img width="350" height="auto" src="assets/home.PNG" style="padding-left: 10px;">
+  <ion-row> 
+    <ion-col size="12" style="padding-left: 14px; border-bottom: 2px solid #d3d3d347;">
+      <span> Recent Played Videos </span> 
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/video01.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Demo Video 1 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/video02.png" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Demo Video 2 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/video03.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Demo Video 3 </ion-card-title>
+      </ion-card>
+    </ion-col> 
+
+  </ion-row> 
+
+    <ion-row> 
+    <ion-col size="12" style="padding-left: 14px; border-bottom: 2px solid #d3d3d347;">
+      <span> Recent Played Audios </span> 
+    </ion-col>
+  </ion-row> 
+
+  <ion-row>
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/audio04.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Demo Audio 1 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/audio02.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Demo Audio 2 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/audio03.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Demo Audio 3 </ion-card-title>
+      </ion-card>
+    </ion-col> 
+
+  </ion-row>  
+
+    <ion-row> 
+    <ion-col size="12" style="padding-left: 14px; border-bottom: 2px solid #d3d3d347;">
+      <span> Recent Viewed Gallery </span> 
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/images01.jpg" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Gallery 1 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/images02.jpg" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Gallery 2 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="50" src="assets/images03.jpg" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Gallery 3 </ion-card-title>
+      </ion-card>
+    </ion-col> 
+
+  </ion-row>    
+
+  <ion-row> 
+    <ion-col size="12" style="padding-left: 14px; border-bottom: 2px solid #d3d3d347;">
+      <span> Recent Viewed Content </span> 
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="100" src="assets/content001.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Content 1 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="100" src="assets/content002.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Content 2 </ion-card-title>
+      </ion-card>
+    </ion-col>     
+
+    <ion-col size="4">
+      <ion-card (click)="gallery()">
+         <img width="150" height="100" src="assets/content003.PNG" style="padding-left: 5px; padding-right: 5px;">
+          <ion-card-title style="font-size: 12px;"> Content 3 </ion-card-title>
+      </ion-card>
+    </ion-col> 
+
+  </ion-row>
+
+  
+
+      <!-- <img width="350" height="auto" src="assets/home.PNG" style="padding-left: 10px;"> -->
 
 </ion-content>

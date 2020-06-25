@@ -15,3 +15,12 @@
     --ion-color-shade: var(--ion-color-success-shade, #28ba62) !important;
     --ion-color-tint: var(--ion-color-success-tint, #42d77d) !important;
 }
+
+.ioncard{
+    background: #2ba7de;color: #fff;height: 60px;border-radius: 5px;
+
+    h1 {
+        margin-top: 0px;
+        font-size: 23px;
+    }
+}
